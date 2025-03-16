@@ -29,7 +29,7 @@ body {
 .container1{
     position: fixed;
     z-index: 10; 
-    background-color: #d651b9;
+    background-color: rgb(29, 161, 122);
     width: 100%;
     display: flex;
     top: 0;
@@ -105,8 +105,6 @@ body {
     }
 }
 
-
-
 .container1 ul li{
     display: inline;
     margin-right: 3rem;
@@ -161,7 +159,7 @@ body {
     border: none;
     font-size: 19px;
     border-radius: 5px;
-    margin-top: 20px;
+    margin-bottom: 260px;
    
 }
 @media (max-width: 760px){
@@ -640,14 +638,6 @@ p {
     from { transform: translateX(100%); }
     to { transform: translateX(0); }
 }
-
-
-
-
-
-
-
-
 
 
 /* Payment Form Styles */
