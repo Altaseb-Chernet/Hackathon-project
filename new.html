@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Security-Policy" content="script-src 'self' https://accounts.google.com">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="./new.css">
+</head>
+<body>
+    <!-- Add to navbar -->
+<!-- In your login modal -->
+ <!-- Keep the existing auth modal but add this at the bottom -->
+<div class="modal-footer">
+    <button type="button" class="btn btn-link" data-bs-dismiss="modal">Close</button>
+</div>
+<div class="modal-body">
+    <div class="auth-message success" style="display: none;">Registration successful!</div>
+    <form action="index.html" id="loginForm" class="auth-form">
+        <div class="form-group">
+            <i class="fas fa-envelope input-icon"></i>
+            <input type="email" class="form-control" placeholder="Email" required>
+        </div>
+        <div class="form-group">
+            <i class="fas fa-lock input-icon"></i>
+            <input type="password" class="form-control" placeholder="Password" required>
+        </div>
+        
+        <a href="index.html"><button type="submit" class="btn btn-auth">Sign In</button></a>
+        
+        <div class="auth-switch mt-4">
+            Don't have an account? <a href="#" data-bs-target="#registerModal" data-bs-toggle="modal">Create one</a>
+        </div>
+        
+        <div class="social-auth mt-4">
+            <p class="text-muted mb-3">Or continue with</p>
+            <a href="#" class="social-btn google">
+                <i class="fab fa-google"></i> Google
+            </a>
+            <a href="#" class="social-btn facebook">
+                <i class="fab fa-facebook-f"></i> Facebook
+            </a>
+        </div>
+    </form>
+</div>
+
+<!-- In your registration modal -->
+<div class="modal-body">
+    <form id="registerForm" class="auth-form">
+        <div class="form-group">
+            <i class="fas fa-user input-icon"></i>
+            <input type="text" class="form-control" placeholder="Full Name" required>
+        </div>
+        <div class="form-group">
+            <i class="fas fa-envelope input-icon"></i>
+            <input type="email" class="form-control" placeholder="Email" required>
+        </div>
+        <div class="form-group">
+            <i class="fas fa-phone input-icon"></i>
+            <input type="tel" class="form-control" placeholder="Phone Number" required>
+        </div>
+        <div class="form-group">
+            <i class="fas fa-lock input-icon"></i>
+            <input type="password" class="form-control" placeholder="Password" required>
+        </div>
+        <div class="form-group">
+            <i class="fas fa-lock input-icon"></i>
+            <input type="password" class="form-control" placeholder="Confirm Password" required>
+        </div>
+        <button type="submit" class="btn btn-auth">Create Account</button>
+    </form>
+</div>
+<script src="./new.js"></script>
+</body>
+</html>
